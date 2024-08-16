@@ -1,0 +1,488 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", system-ui;
+}
+
+button {
+  font-family: "Oswald", system-ui;
+}
+
+input {
+  font-family: "Oswald", system-ui;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main_container {
+  height: auto;
+}
+
+/* Navbar */
+nav {
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_logo {
+  height: 60px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav_items li {
+  height: 70px;
+  padding: 20px 30px 0px 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.nav_items li:nth-child(-n + 2) {
+  background-color: white;
+}
+
+.nav_items li:nth-child(n + 3):nth-child(-n + 6) {
+  background-color: black;
+  color: #fff;
+}
+
+.nav_items li:nth-child(n + 3):nth-child(-n + 6):hover {
+  background-color: #abb8c3;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.nav_items li:last-child {
+  background-color: red;
+  color: #000;
+}
+
+.nav_items li:hover {
+  background-color: #abb8c3;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.down_arrow {
+  height: 8px;
+}
+
+.language {
+  text-align: right;
+  margin: 5px 10px;
+  color: #444;
+}
+
+.language:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url("https://controlgame.com/wp-content/themes/controltheme/images/bg.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 90px;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.hero_container {
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 100px;
+  padding: 20px;
+}
+
+.cue {
+  height: 130px;
+}
+
+.hero_container p {
+  margin: 20px 0px;
+}
+
+.hero_button {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.hero_button:hover {
+  background-color: #cf2e2e;
+  border: none;
+  transform: scale(1.1);
+}
+
+.social_site_container {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-left: 30%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.social_site_container li:hover {
+  transform: scale(1.1);
+}
+
+.available {
+  font-weight: bold;
+}
+
+.learn {
+  color: #cf2e2e;
+}
+
+/* Buy Section */
+#buy {
+  position: relative;
+  background-color: #000;
+  min-height: 90vh;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.buy_heading {
+  color: #cf2e2e;
+  font-size: 2rem;
+}
+.form_container {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.form_container select {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0px;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  background-image: url("https://controlgame.com/wp-content/themes/controltheme/images/bg_about.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 30px;
+}
+
+.about_container {
+  width: 40%;
+  text-align: center;
+}
+
+.about_container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about_container h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* AWARDS SECTION */
+.awards_container {
+  background-image: url("https://controlgame.com/wp-content/themes/controltheme/images/bg_awards.jpg");
+  background-position: -800px 0px;
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.awards_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.awards_container_1 img {
+  width: 250px;
+  margin: 30px;
+}
+
+.awards_container_2 img {
+  height: 80px;
+  width: 250px;
+  margin: 30px 50px;
+}
+
+.nominee {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 100px;
+  width: 200px;
+}
+
+/* BLOG SECTION */
+
+#blog {
+  background-image: url("https://controlgame.com/wp-content/themes/controltheme/images/bg_news.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+#blog h1 {
+  font-size: 2.5rem;
+  color: #cf2e2e;
+  margin-bottom: 40px;
+}
+
+.blog_container {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog_container li {
+  background-color: #000;
+  width: 25%;
+  margin: 10px;
+  color: #fff;
+  transition: transsform 1s;
+}
+
+.blog_container li:hover {
+  transform: scale(1.1);
+}
+
+.blog_container li img {
+  height: 150px;
+  width: 100%;
+}
+
+.details_container {
+  margin: 10px 20px;
+  text-align: left;
+}
+
+.details_container p:nth-child(1) {
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.details_container p:nth-child(2) {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.details_container p span {
+  font-weight: 500;
+}
+
+.details_container p:nth-child(3) {
+  text-indent: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.details_container h4:nth-child(4) {
+  width: 75px;
+}
+
+.details_container h4:nth-child(4):hover {
+  text-decoration: underline;
+  color: rgb(192, 191, 191);
+  cursor: pointer;
+}
+
+/* Sign Up Section */
+.signup {
+  background-image: url("https://controlgame.com/wp-content/themes/controltheme/images/bg_signup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup div {
+  width: 40%;
+  padding: 0px 30px;
+}
+
+.signup div h1 {
+  color: #ea000c;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.signup div h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.signup div p {
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 5px;
+  letter-spacing: 4px;
+  padding: 5px 10px;
+}
+
+.subscribe {
+  background-color: #ea000c;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0px;
+  border: none;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  transition: transform 0.5s;
+}
+
+.subscribe:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+  background-color: #000;
+  padding: 60px 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_footer {
+  height: 50px;
+  margin-left: 100px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0px 70px 0px 100px;
+}
+
+footer ul h3 {
+  color: #fff;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  color: #444;
+  font-size: 0.9rem;
+  transition: 0.5s;
+}
+
+footer ul li:hover {
+  color: #fff;
+}
+
+.rating {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.icon_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.logo1 {
+  height: 30px;
+  margin: 0px 20px 20px 0px;
+}
+
+.logo2 {
+  height: 80px;
+  margin: 0px 20px 20px 0px;
+}
+
+.footer_descrition {
+  font-size: 0.8rem;
+}
