@@ -24,7 +24,7 @@ This project is a static website that replicates the design and layout of the Co
 Clone the repository:
 ```sh
 git clone https://github.com/yourusername/control-game-clone.git
-
+```
 ## Usage
 
 Simply open the `index.html` file in a web browser to view the website. Note that the website is best viewed on laptops.
